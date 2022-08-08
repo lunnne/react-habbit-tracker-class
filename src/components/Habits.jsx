@@ -12,7 +12,6 @@ class Habits extends Component {
           {this.props.habits.map((habit) => (
             <Habit
               key={habit.id}
-              count={habit.count}
               habit={habit}
               onIncrement={(habit) => this.props.onIncrement(habit)}
               onDecrement={(habit) => this.props.onDecrement(habit)}
