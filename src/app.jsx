@@ -32,6 +32,7 @@ class App extends Component {
         const count = habit.count - 1;
         return { ...habit, count: count < 0 ? 0 : count };
       }
+      return item
     });
     // const habits = [...this.state.habits];
     // const index = habits.indexOf(habit);
